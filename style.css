@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    font-family: 'Red Hat Display',sans-serif;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+.main-div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 375px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+ .text{ 
+    padding:6%;
+}
+.text h2{
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+.text p{
+    color: hsl(0, 9%, 64%);
+}
+.plan{
+    background: hsl(227, 100%, 96%);
+    margin:0 6%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    border-radius: 20px;
+}
+.left{
+    display: flex;
+}
+.pricing{
+    margin-left: 20px;
+}
+.pricing p{
+    margin-top: 5px;
+    color:hsl(224, 23%, 55%);
+}
+.change a{
+    color: hsl(223, 47%, 23%);
+    transition: 1s ease;
+}
+.change a:hover{
+    text-decoration: none;
+    color:hsl(245, 75%, 52%)
+    ;
+}
+.order{
+    text-decoration: none;
+    color:white;
+    background-color:hsl(245, 75%, 52%);
+    display: block;
+    padding:10px;
+    margin:6%;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+}
+.order:hover{
+    background-color: hsl(245,75%, 60%);
+}
+.cancel{
+    color:hsl(224, 23%, 55%);
+    text-decoration: none;
+    margin: 20px;
+    transition: 1s ease;
+}
+.cancel:hover{
+    color:black;
+}
